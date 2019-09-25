@@ -1,0 +1,40 @@
+:host {
+    display: table-row;
+}
+
+input[type="number"]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+.single-position {
+    
+    &__suggestion-list {
+        position: absolute;
+        border: 2px black solid;
+        padding: 5px;
+        padding-left: 30px;
+        list-style: circle;
+        min-width: 300px;
+    }
+
+    &__suggestion-item {
+        &::hover {
+            cursor: pointer;
+        }
+    }
+}
+
+
+.trash{
+    background: #999;
+    border:none;
+    width: 38px;
+    height:38px;
+    border-radius: 3px;
+&:hover{
+    background: #333;
+    color:#fff;
+}
+}
+
